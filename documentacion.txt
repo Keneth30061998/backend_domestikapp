@@ -1,0 +1,25 @@
+Paquetes instalados
+
+npm i express
+npm i http
+npm i cors
+npm i morgan
+npm i mysql2
+
+Pasos de la configuracion del backend
+
+Conexion a la bd mediante node 
+
+- Creamos la carpeta Config y al archivo config.js
+
+    Definimos valores necesarios para realizar la conexion a mi base de datos.
+
+- Creamos la carpeta models y el archivo user.js
+
+    Construimos del modelo del objeto User.
+    Añadimos los metodos necesarios. User.create (codigo den sql [insert])
+
+-Creamos la carpeta controllers y el archivo usersControllers.js
+
+
+
