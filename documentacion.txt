@@ -5,6 +5,10 @@ npm i http
 npm i cors
 npm i morgan
 npm i mysql2
+npm i bcryptjs
+npm i passport
+npm i passport-jwt
+npm i jsonwebtoken
 
 Pasos de la configuracion del backend
 
@@ -20,6 +24,21 @@ Conexion a la bd mediante node
     Añadimos los metodos necesarios. User.create (codigo den sql [insert])
 
 -Creamos la carpeta controllers y el archivo usersControllers.js
+
+    configuramos las respuestas que debe dar el servidor en caso de que el registro se hizo correctamente y en caso de que exista alguna falla
+
+-Encriptar contraseñas de usuario
+    usamos el hash de bcrypt en el modelo del usuario, en cuento se registra se Encripta
+
+--Login usuario--
+-Usar JWT
+    Creamos un archivo keys.js -> ahi añadimos una key secret
+    Creamos un archivo passport.ja -> lugar donde vamos a hacer todas las configuraciones
+    En el modelo User creamos el nuevo metodo findbyid - findbyEmail
+    En users controller creamos la funcionalidad de login
+    y creamos el route del login
+
+
 
 
 

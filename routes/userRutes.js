@@ -8,5 +8,6 @@ module.exports = (app)=>{
     //DELETE    -> ELiminar datos
 
     app.post('/api/users/create', usersController.register);
+    app.post('/api/users/login', usersController.login);
 
 }
