@@ -7,6 +7,8 @@ const logger = require('morgan');
 const cors = require('cors');
 const passport = require('passport');
 
+const multer = require('multer');
+
 /**Importar Rutas */
 const usersRoutes = require('./routes/userRutes');
 
@@ -28,6 +30,11 @@ app.disable('x-powered-by'); //Practica de seguridad
 
 app.set('port',port);
 
+//**Para subir imagenes con Firebase */
+const upload = multer({
+    storage: multer.memoryStorage()
+});
+
 server.listen(3000,'192.168.100.2' || 'localhost', function(){
     console.log('Aplicacion de node JS '+port+' iniciando...')
 });
@@ -41,7 +48,7 @@ app.get('/test',(req,res)=>{
 });
 
 /**Llamado de Rutas*/
-usersRoutes(app);
+usersRoutes(app, upload);
 
 
 
