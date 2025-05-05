@@ -17,23 +17,7 @@ Firebase (autenticación, Firestore, notificaciones push)
 Provider (gestión de estado)
 Google Maps API (ubicación de trabajadores)
 HTTP (consumo de servicios REST)
-📂 Estructura del proyecto
 
-lib/
-├── controllers/
-│   └── auth_controller.dart
-├── models/
-│   └── user_model.dart
-├── pages/
-│   ├── login_page.dart
-│   ├── home_page.dart
-│   └── service_detail_page.dart
-├── services/
-│   └── firebase_service.dart
-├── widgets/
-│   └── custom_card.dart
-└── main.dart
-🔧 Instalación
 
 Clona este repositorio:
 git clone https://github.com/tuusuario/homework-app.git
